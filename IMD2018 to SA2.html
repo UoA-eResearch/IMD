@@ -14286,9 +14286,9 @@ a.anchor-link {
 
 
 
-<div id="8f5b5abb-cb76-439b-9990-e1f5aa018375" class="jp-RenderedJavaScript jp-OutputArea-output " data-mime-type="application/javascript">
+<div id="1814c36e-fc68-4708-9c55-8a64f9caeee4" class="jp-RenderedJavaScript jp-OutputArea-output " data-mime-type="application/javascript">
 <script type="text/javascript">
-var element = document.getElementById('8f5b5abb-cb76-439b-9990-e1f5aa018375');
+var element = document.getElementById('1814c36e-fc68-4708-9c55-8a64f9caeee4');
 Jupyter.utils.load_extensions('nodebook/nodebookext')
 </script>
 </div>
@@ -14331,7 +14331,10 @@ Jupyter.utils.load_extensions('nodebook/nodebookext')
 
 
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>[&#39;statsnzstatistical-area-2-2020-generalised-FGDB.zip&#39;, &#39;IMD2018.zip&#39;]</pre>
+<pre>[&#39;statsnzstatistical-area-2-2018-generalised-FGDB.zip&#39;,
+ &#39;statsnzstatistical-area-2-2018-generalised-FGDB.zip:Zone.Identifier&#39;,
+ &#39;statsnzstatistical-area-2-2020-generalised-FGDB.zip&#39;,
+ &#39;IMD2018.zip&#39;]</pre>
 </div>
 
 </div>
@@ -15220,8 +15223,8 @@ Jupyter.utils.load_extensions('nodebook/nodebookext')
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">sa2</span> <span class="o">=</span> <span class="n">gpd</span><span class="o">.</span><span class="n">read_file</span><span class="p">(</span><span class="s2">&quot;input/statsnzstatistical-area-2-2020-generalised-FGDB.zip!statistical-area-2-2020-generalised.gdb&quot;</span><span class="p">)</span>
-<span class="n">sa2</span> <span class="o">=</span> <span class="n">sa2</span><span class="o">.</span><span class="n">set_index</span><span class="p">(</span><span class="s2">&quot;SA22020_V1_00&quot;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">sa2</span> <span class="o">=</span> <span class="n">gpd</span><span class="o">.</span><span class="n">read_file</span><span class="p">(</span><span class="s2">&quot;input/statsnzstatistical-area-2-2018-generalised-FGDB.zip!statistical-area-2-2018-generalised.gdb&quot;</span><span class="p">)</span>
+<span class="n">sa2</span> <span class="o">=</span> <span class="n">sa2</span><span class="o">.</span><span class="n">set_index</span><span class="p">(</span><span class="s2">&quot;SA22018_V1_00&quot;</span><span class="p">)</span>
 <span class="n">sa2</span>
 </pre></div>
 
@@ -15261,16 +15264,14 @@ Jupyter.utils.load_extensions('nodebook/nodebookext')
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>SA22020_V1_00_NAME</th>
-      <th>SA22020_V1_00_NAME_ASCII</th>
+      <th>SA22018_V1_NAME</th>
       <th>LAND_AREA_SQ_KM</th>
       <th>AREA_SQ_KM</th>
-      <th>SHAPE_Length</th>
+      <th>Shape_Length</th>
       <th>geometry</th>
     </tr>
     <tr>
-      <th>SA22020_V1_00</th>
-      <th></th>
+      <th>SA22018_V1_00</th>
       <th></th>
       <th></th>
       <th></th>
@@ -15280,49 +15281,44 @@ Jupyter.utils.load_extensions('nodebook/nodebookext')
   </thead>
   <tbody>
     <tr>
-      <th>100100</th>
-      <td>North Cape</td>
-      <td>North Cape</td>
-      <td>829.081715</td>
-      <td>829.081715</td>
-      <td>4.159623e+05</td>
-      <td>MULTIPOLYGON (((1567022.256 6185741.265, 15670...</td>
-    </tr>
-    <tr>
-      <th>100200</th>
-      <td>Rangaunu Harbour</td>
-      <td>Rangaunu Harbour</td>
-      <td>273.936484</td>
-      <td>273.936484</td>
-      <td>1.491554e+05</td>
-      <td>MULTIPOLYGON (((1624517.242 6128488.368, 16245...</td>
-    </tr>
-    <tr>
-      <th>100300</th>
-      <td>Inlets Far North District</td>
-      <td>Inlets Far North District</td>
-      <td>0.000000</td>
-      <td>626.101124</td>
-      <td>1.358870e+06</td>
-      <td>MULTIPOLYGON (((1666947.690 6126687.578, 16669...</td>
+      <th>190000</th>
+      <td>Te More</td>
+      <td>47.922581</td>
+      <td>47.922581</td>
+      <td>33420.011116</td>
+      <td>MULTIPOLYGON (((1862216.162 5670176.109, 18622...</td>
     </tr>
     <tr>
       <th>100400</th>
       <td>Karikari Peninsula</td>
-      <td>Karikari Peninsula</td>
-      <td>174.188105</td>
-      <td>174.188105</td>
-      <td>1.400124e+05</td>
-      <td>MULTIPOLYGON (((1636163.048 6151520.935, 16361...</td>
+      <td>174.180816</td>
+      <td>174.180816</td>
+      <td>140012.346179</td>
+      <td>MULTIPOLYGON (((1636338.253 6150839.030, 16363...</td>
     </tr>
     <tr>
       <th>100500</th>
       <td>Tangonge</td>
-      <td>Tangonge</td>
-      <td>177.098445</td>
-      <td>177.098445</td>
-      <td>1.013318e+05</td>
-      <td>MULTIPOLYGON (((1615865.103 6109920.357, 16154...</td>
+      <td>177.204343</td>
+      <td>177.204343</td>
+      <td>101241.085328</td>
+      <td>MULTIPOLYGON (((1622137.152 6120265.782, 16232...</td>
+    </tr>
+    <tr>
+      <th>100900</th>
+      <td>Rangitihi</td>
+      <td>84.660427</td>
+      <td>84.660427</td>
+      <td>60678.427036</td>
+      <td>MULTIPOLYGON (((1626461.006 6119158.300, 16264...</td>
+    </tr>
+    <tr>
+      <th>101000</th>
+      <td>Oruru-Parapara</td>
+      <td>103.280728</td>
+      <td>103.280728</td>
+      <td>67331.035524</td>
+      <td>MULTIPOLYGON (((1638658.179 6128997.443, 16386...</td>
     </tr>
     <tr>
       <th>...</th>
@@ -15331,56 +15327,50 @@ Jupyter.utils.load_extensions('nodebook/nodebookext')
       <td>...</td>
       <td>...</td>
       <td>...</td>
-      <td>...</td>
     </tr>
     <tr>
-      <th>362300</th>
-      <td>Kennington-Tisbury</td>
-      <td>Kennington-Tisbury</td>
-      <td>36.983390</td>
-      <td>36.983390</td>
-      <td>3.881653e+04</td>
-      <td>MULTIPOLYGON (((1246757.001 4849353.288, 12467...</td>
+      <th>400011</th>
+      <td>Bounty Islands</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>None</td>
     </tr>
     <tr>
-      <th>362400</th>
-      <td>Newfield</td>
-      <td>Newfield</td>
-      <td>2.005521</td>
-      <td>2.005521</td>
-      <td>6.489263e+03</td>
-      <td>MULTIPOLYGON (((1245183.705 4849667.898, 12452...</td>
+      <th>400012</th>
+      <td>Oceanic Snares Islands</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>None</td>
     </tr>
     <tr>
-      <th>362500</th>
-      <td>Strathern</td>
-      <td>Strathern</td>
-      <td>0.983959</td>
-      <td>0.983959</td>
-      <td>4.203835e+03</td>
-      <td>MULTIPOLYGON (((1243610.148 4848171.365, 12436...</td>
+      <th>400013</th>
+      <td>Snares Islands</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>None</td>
     </tr>
     <tr>
-      <th>362600</th>
-      <td>Elizabeth Park</td>
-      <td>Elizabeth Park</td>
-      <td>1.030253</td>
-      <td>1.030253</td>
-      <td>5.085466e+03</td>
-      <td>MULTIPOLYGON (((1245413.220 4848647.633, 12456...</td>
+      <th>400014</th>
+      <td>Oceanic Antipodes Islands</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>None</td>
     </tr>
     <tr>
-      <th>362700</th>
-      <td>Aurora</td>
-      <td>Aurora</td>
-      <td>0.652897</td>
-      <td>0.652897</td>
-      <td>3.653115e+03</td>
-      <td>MULTIPOLYGON (((1244636.902 4848000.202, 12446...</td>
+      <th>400015</th>
+      <td>Antipodes Islands</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>None</td>
     </tr>
   </tbody>
 </table>
-<p>2255 rows × 6 columns</p>
+<p>2253 rows × 5 columns</p>
 </div>
 </div>
 
@@ -15436,11 +15426,10 @@ Jupyter.utils.load_extensions('nodebook/nodebookext')
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>SA22020_V1_00_NAME</th>
-      <th>SA22020_V1_00_NAME_ASCII</th>
+      <th>SA22018_V1_NAME</th>
       <th>LAND_AREA_SQ_KM</th>
       <th>AREA_SQ_KM</th>
-      <th>SHAPE_Length</th>
+      <th>Shape_Length</th>
       <th>geometry</th>
       <th>index_right</th>
       <th>Census_Pop</th>
@@ -15454,8 +15443,7 @@ Jupyter.utils.load_extensions('nodebook/nodebookext')
       <th>Census_Pop*Rank_Acces</th>
     </tr>
     <tr>
-      <th>SA22020_V1_00</th>
-      <th></th>
+      <th>SA22018_V1_00</th>
       <th></th>
       <th></th>
       <th></th>
@@ -15475,99 +15463,94 @@ Jupyter.utils.load_extensions('nodebook/nodebookext')
   </thead>
   <tbody>
     <tr>
-      <th>100100</th>
-      <td>North Cape</td>
-      <td>North Cape</td>
-      <td>829.081715</td>
-      <td>829.081715</td>
-      <td>415962.276096</td>
-      <td>MULTIPOLYGON (((1567022.256 6185741.265, 15670...</td>
-      <td>100001</td>
-      <td>1134</td>
-      <td>6314112</td>
-      <td>6415038.0</td>
-      <td>5633712</td>
-      <td>3595914</td>
-      <td>6175764</td>
-      <td>4027968</td>
-      <td>6890184</td>
-      <td>6965028</td>
+      <th>100400</th>
+      <td>Karikari Peninsula</td>
+      <td>174.180816</td>
+      <td>174.180816</td>
+      <td>140012.346179</td>
+      <td>MULTIPOLYGON (((1636338.253 6150839.030, 16363...</td>
+      <td>100023</td>
+      <td>762</td>
+      <td>4034790</td>
+      <td>4487037.0</td>
+      <td>3974592</td>
+      <td>2167128</td>
+      <td>2195322</td>
+      <td>2921508</td>
+      <td>3395472</td>
+      <td>4453890</td>
     </tr>
     <tr>
-      <th>100200</th>
-      <td>Rangaunu Harbour</td>
-      <td>Rangaunu Harbour</td>
-      <td>273.936484</td>
-      <td>273.936484</td>
-      <td>149155.420050</td>
-      <td>MULTIPOLYGON (((1624517.242 6128488.368, 16245...</td>
-      <td>100016</td>
-      <td>642</td>
-      <td>3707550</td>
-      <td>3848790.0</td>
-      <td>3607398</td>
-      <td>2814528</td>
-      <td>3319782</td>
-      <td>1622334</td>
-      <td>3809628</td>
-      <td>3437910</td>
+      <th>100400</th>
+      <td>Karikari Peninsula</td>
+      <td>174.180816</td>
+      <td>174.180816</td>
+      <td>140012.346179</td>
+      <td>MULTIPOLYGON (((1636338.253 6150839.030, 16363...</td>
+      <td>100020</td>
+      <td>885</td>
+      <td>4942725</td>
+      <td>5158222.5</td>
+      <td>4648905</td>
+      <td>5300265</td>
+      <td>1995675</td>
+      <td>4393140</td>
+      <td>4852455</td>
+      <td>5332125</td>
     </tr>
     <tr>
-      <th>100200</th>
-      <td>Rangaunu Harbour</td>
-      <td>Rangaunu Harbour</td>
-      <td>273.936484</td>
-      <td>273.936484</td>
-      <td>149155.420050</td>
-      <td>MULTIPOLYGON (((1624517.242 6128488.368, 16245...</td>
-      <td>100005</td>
-      <td>621</td>
-      <td>2993841</td>
-      <td>3580065.0</td>
-      <td>2624967</td>
-      <td>2718738</td>
-      <td>2420037</td>
-      <td>676269</td>
-      <td>2710044</td>
-      <td>3522933</td>
+      <th>100500</th>
+      <td>Tangonge</td>
+      <td>177.204343</td>
+      <td>177.204343</td>
+      <td>101241.085328</td>
+      <td>MULTIPOLYGON (((1622137.152 6120265.782, 16232...</td>
+      <td>100002</td>
+      <td>684</td>
+      <td>3593052</td>
+      <td>3979170.0</td>
+      <td>3257208</td>
+      <td>3887856</td>
+      <td>2378268</td>
+      <td>1877580</td>
+      <td>3532860</td>
+      <td>3887856</td>
     </tr>
     <tr>
-      <th>100200</th>
-      <td>Rangaunu Harbour</td>
-      <td>Rangaunu Harbour</td>
-      <td>273.936484</td>
-      <td>273.936484</td>
-      <td>149155.420050</td>
-      <td>MULTIPOLYGON (((1624517.242 6128488.368, 16245...</td>
-      <td>100012</td>
-      <td>756</td>
-      <td>4184460</td>
-      <td>4545072.0</td>
-      <td>3894912</td>
-      <td>1935360</td>
-      <td>3455676</td>
-      <td>3177468</td>
-      <td>3925152</td>
-      <td>4038552</td>
+      <th>100500</th>
+      <td>Tangonge</td>
+      <td>177.204343</td>
+      <td>177.204343</td>
+      <td>101241.085328</td>
+      <td>MULTIPOLYGON (((1622137.152 6120265.782, 16232...</td>
+      <td>100009</td>
+      <td>822</td>
+      <td>3476238</td>
+      <td>3490623.0</td>
+      <td>3795174</td>
+      <td>2714244</td>
+      <td>2539158</td>
+      <td>3103872</td>
+      <td>3395682</td>
+      <td>4228368</td>
     </tr>
     <tr>
-      <th>100200</th>
-      <td>Rangaunu Harbour</td>
-      <td>Rangaunu Harbour</td>
-      <td>273.936484</td>
-      <td>273.936484</td>
-      <td>149155.420050</td>
-      <td>MULTIPOLYGON (((1624517.242 6128488.368, 16245...</td>
-      <td>100004</td>
-      <td>870</td>
-      <td>4243860</td>
-      <td>4815885.0</td>
-      <td>3901950</td>
-      <td>3493050</td>
-      <td>3194640</td>
-      <td>2032320</td>
-      <td>4408290</td>
-      <td>5242620</td>
+      <th>100500</th>
+      <td>Tangonge</td>
+      <td>177.204343</td>
+      <td>177.204343</td>
+      <td>101241.085328</td>
+      <td>MULTIPOLYGON (((1622137.152 6120265.782, 16232...</td>
+      <td>100017</td>
+      <td>534</td>
+      <td>2640096</td>
+      <td>2953821.0</td>
+      <td>2411010</td>
+      <td>1399080</td>
+      <td>1996092</td>
+      <td>1964586</td>
+      <td>2860638</td>
+      <td>2576550</td>
     </tr>
     <tr>
       <th>...</th>
@@ -15586,54 +15569,14 @@ Jupyter.utils.load_extensions('nodebook/nodebookext')
       <td>...</td>
       <td>...</td>
       <td>...</td>
-      <td>...</td>
     </tr>
     <tr>
       <th>362600</th>
       <td>Elizabeth Park</td>
-      <td>Elizabeth Park</td>
-      <td>1.030253</td>
-      <td>1.030253</td>
-      <td>5085.466054</td>
-      <td>MULTIPOLYGON (((1245413.220 4848647.633, 12456...</td>
-      <td>7500065</td>
-      <td>666</td>
-      <td>3505158</td>
-      <td>3395934.0</td>
-      <td>3613716</td>
-      <td>2172492</td>
-      <td>2932398</td>
-      <td>3042954</td>
-      <td>3798864</td>
-      <td>1609722</td>
-    </tr>
-    <tr>
-      <th>362600</th>
-      <td>Elizabeth Park</td>
-      <td>Elizabeth Park</td>
-      <td>1.030253</td>
-      <td>1.030253</td>
-      <td>5085.466054</td>
-      <td>MULTIPOLYGON (((1245413.220 4848647.633, 12456...</td>
-      <td>7500056</td>
-      <td>570</td>
-      <td>2661330</td>
-      <td>1653570.0</td>
-      <td>2653350</td>
-      <td>2690970</td>
-      <td>957030</td>
-      <td>3445650</td>
-      <td>2657910</td>
-      <td>1539000</td>
-    </tr>
-    <tr>
-      <th>362600</th>
-      <td>Elizabeth Park</td>
-      <td>Elizabeth Park</td>
-      <td>1.030253</td>
-      <td>1.030253</td>
-      <td>5085.466054</td>
-      <td>MULTIPOLYGON (((1245413.220 4848647.633, 12456...</td>
+      <td>1.030434</td>
+      <td>1.030434</td>
+      <td>5084.792826</td>
+      <td>MULTIPOLYGON (((1245892.259 4848174.153, 12459...</td>
       <td>7500071</td>
       <td>651</td>
       <td>3497823</td>
@@ -15646,46 +15589,80 @@ Jupyter.utils.load_extensions('nodebook/nodebookext')
       <td>2341647</td>
     </tr>
     <tr>
-      <th>362700</th>
-      <td>Aurora</td>
-      <td>Aurora</td>
-      <td>0.652897</td>
-      <td>0.652897</td>
-      <td>3653.115042</td>
-      <td>MULTIPOLYGON (((1244636.902 4848000.202, 12446...</td>
-      <td>7500060</td>
-      <td>618</td>
-      <td>3263658</td>
-      <td>2964237.0</td>
-      <td>3345852</td>
-      <td>3399000</td>
-      <td>2637624</td>
-      <td>2868138</td>
-      <td>3560298</td>
-      <td>1918890</td>
+      <th>181600</th>
+      <td>Lake Cameron</td>
+      <td>51.516233</td>
+      <td>51.516233</td>
+      <td>46182.545881</td>
+      <td>MULTIPOLYGON (((1797736.320 5813528.701, 17981...</td>
+      <td>1700014</td>
+      <td>714</td>
+      <td>1596504</td>
+      <td>2090235.0</td>
+      <td>771834</td>
+      <td>2940966</td>
+      <td>1146684</td>
+      <td>2472582</td>
+      <td>1877820</td>
+      <td>3702090</td>
     </tr>
     <tr>
-      <th>362700</th>
-      <td>Aurora</td>
-      <td>Aurora</td>
-      <td>0.652897</td>
-      <td>0.652897</td>
-      <td>3653.115042</td>
-      <td>MULTIPOLYGON (((1244636.902 4848000.202, 12446...</td>
-      <td>7500054</td>
-      <td>537</td>
-      <td>2651706</td>
-      <td>2825694.0</td>
-      <td>2765013</td>
-      <td>2015898</td>
-      <td>2052414</td>
-      <td>2094837</td>
-      <td>2674260</td>
-      <td>1123404</td>
+      <th>181600</th>
+      <td>Lake Cameron</td>
+      <td>51.516233</td>
+      <td>51.516233</td>
+      <td>46182.545881</td>
+      <td>MULTIPOLYGON (((1797736.320 5813528.701, 17981...</td>
+      <td>1700026</td>
+      <td>651</td>
+      <td>1160733</td>
+      <td>1192632.0</td>
+      <td>502572</td>
+      <td>1468005</td>
+      <td>1609923</td>
+      <td>3023244</td>
+      <td>632772</td>
+      <td>3324657</td>
+    </tr>
+    <tr>
+      <th>333600</th>
+      <td>Craigieburn</td>
+      <td>3444.102385</td>
+      <td>3444.102385</td>
+      <td>325961.578297</td>
+      <td>MULTIPOLYGON (((1511215.865 5266196.089, 15112...</td>
+      <td>6200001</td>
+      <td>507</td>
+      <td>1494129</td>
+      <td>1398559.5</td>
+      <td>863421</td>
+      <td>3120585</td>
+      <td>1600599</td>
+      <td>584571</td>
+      <td>1111851</td>
+      <td>3128190</td>
+    </tr>
+    <tr>
+      <th>333700</th>
+      <td>Torlesse</td>
+      <td>413.955337</td>
+      <td>413.955337</td>
+      <td>117846.474294</td>
+      <td>MULTIPOLYGON (((1513576.953 5213946.134, 15136...</td>
+      <td>6200004</td>
+      <td>837</td>
+      <td>1529199</td>
+      <td>1321623.0</td>
+      <td>1825497</td>
+      <td>3305313</td>
+      <td>1600344</td>
+      <td>674622</td>
+      <td>2550339</td>
+      <td>4929930</td>
     </tr>
   </tbody>
 </table>
-<p>6181 rows × 16 columns</p>
+<p>6181 rows × 15 columns</p>
 </div>
 </div>
 
@@ -15709,7 +15686,7 @@ Jupyter.utils.load_extensions('nodebook/nodebookext')
 </div>
 </div>
 
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
@@ -15721,6 +15698,29 @@ Jupyter.utils.load_extensions('nodebook/nodebookext')
      </div>
 </div>
 </div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
+<pre>/home/nyou045/git/nodebook/nodebook/pickledict.py:38: FutureWarning: to_msgpack is deprecated and will be removed in a future version.
+It is recommended to use pyarrow for on-the-wire transmission of pandas objects.
+  return msgpack.ExtType(PANDAS_CODE, obj.to_msgpack())
+</pre>
+</div>
+</div>
+
+</div>
+
 </div>
 
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
@@ -15745,13 +15745,27 @@ Jupyter.utils.load_extensions('nodebook/nodebookext')
 <div class="jp-OutputArea-child">
 
     
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
+<pre>/usr/local/lib/python3.8/dist-packages/msgpack/__init__.py:58: FutureWarning: The read_msgpack is deprecated and will be removed in a future version.
+It is recommended to use pyarrow for on-the-wire transmission of pandas objects.
+  return unpackb(data, **kwargs)
+</pre>
+</div>
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
     <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
 
 
 
 
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>SA22020_V1_00
+<pre>SA22018_V1_00
 100100    1134
 100200    2889
 100400    1647
@@ -15763,7 +15777,7 @@ Jupyter.utils.load_extensions('nodebook/nodebookext')
 363000    2283
 363100     879
 363300    1788
-Name: Census_Pop, Length: 2090, dtype: int64</pre>
+Name: Census_Pop, Length: 2089, dtype: int64</pre>
 </div>
 
 </div>
@@ -15818,17 +15832,15 @@ Name: Census_Pop, Length: 2090, dtype: int64</pre>
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>SA22020_V1_00_NAME</th>
-      <th>SA22020_V1_00_NAME_ASCII</th>
+      <th>SA22018_V1_NAME</th>
       <th>LAND_AREA_SQ_KM</th>
       <th>AREA_SQ_KM</th>
-      <th>SHAPE_Length</th>
+      <th>Shape_Length</th>
       <th>geometry</th>
       <th>Census_Pop</th>
     </tr>
     <tr>
-      <th>SA22020_V1_00</th>
-      <th></th>
+      <th>SA22018_V1_00</th>
       <th></th>
       <th></th>
       <th></th>
@@ -15839,54 +15851,49 @@ Name: Census_Pop, Length: 2090, dtype: int64</pre>
   </thead>
   <tbody>
     <tr>
-      <th>100100</th>
-      <td>North Cape</td>
-      <td>North Cape</td>
-      <td>829.081715</td>
-      <td>829.081715</td>
-      <td>4.159623e+05</td>
-      <td>MULTIPOLYGON (((1567022.256 6185741.265, 15670...</td>
-      <td>1134.0</td>
-    </tr>
-    <tr>
-      <th>100200</th>
-      <td>Rangaunu Harbour</td>
-      <td>Rangaunu Harbour</td>
-      <td>273.936484</td>
-      <td>273.936484</td>
-      <td>1.491554e+05</td>
-      <td>MULTIPOLYGON (((1624517.242 6128488.368, 16245...</td>
-      <td>2889.0</td>
-    </tr>
-    <tr>
-      <th>100300</th>
-      <td>Inlets Far North District</td>
-      <td>Inlets Far North District</td>
-      <td>0.000000</td>
-      <td>626.101124</td>
-      <td>1.358870e+06</td>
-      <td>MULTIPOLYGON (((1666947.690 6126687.578, 16669...</td>
+      <th>190000</th>
+      <td>Te More</td>
+      <td>47.922581</td>
+      <td>47.922581</td>
+      <td>33420.011116</td>
+      <td>MULTIPOLYGON (((1862216.162 5670176.109, 18622...</td>
       <td>NaN</td>
     </tr>
     <tr>
       <th>100400</th>
       <td>Karikari Peninsula</td>
-      <td>Karikari Peninsula</td>
-      <td>174.188105</td>
-      <td>174.188105</td>
-      <td>1.400124e+05</td>
-      <td>MULTIPOLYGON (((1636163.048 6151520.935, 16361...</td>
+      <td>174.180816</td>
+      <td>174.180816</td>
+      <td>140012.346179</td>
+      <td>MULTIPOLYGON (((1636338.253 6150839.030, 16363...</td>
       <td>1647.0</td>
     </tr>
     <tr>
       <th>100500</th>
       <td>Tangonge</td>
-      <td>Tangonge</td>
-      <td>177.098445</td>
-      <td>177.098445</td>
-      <td>1.013318e+05</td>
-      <td>MULTIPOLYGON (((1615865.103 6109920.357, 16154...</td>
+      <td>177.204343</td>
+      <td>177.204343</td>
+      <td>101241.085328</td>
+      <td>MULTIPOLYGON (((1622137.152 6120265.782, 16232...</td>
       <td>2040.0</td>
+    </tr>
+    <tr>
+      <th>100900</th>
+      <td>Rangitihi</td>
+      <td>84.660427</td>
+      <td>84.660427</td>
+      <td>60678.427036</td>
+      <td>MULTIPOLYGON (((1626461.006 6119158.300, 16264...</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>101000</th>
+      <td>Oruru-Parapara</td>
+      <td>103.280728</td>
+      <td>103.280728</td>
+      <td>67331.035524</td>
+      <td>MULTIPOLYGON (((1638658.179 6128997.443, 16386...</td>
+      <td>624.0</td>
     </tr>
     <tr>
       <th>...</th>
@@ -15896,61 +15903,55 @@ Name: Census_Pop, Length: 2090, dtype: int64</pre>
       <td>...</td>
       <td>...</td>
       <td>...</td>
-      <td>...</td>
     </tr>
     <tr>
-      <th>362300</th>
-      <td>Kennington-Tisbury</td>
-      <td>Kennington-Tisbury</td>
-      <td>36.983390</td>
-      <td>36.983390</td>
-      <td>3.881653e+04</td>
-      <td>MULTIPOLYGON (((1246757.001 4849353.288, 12467...</td>
-      <td>1344.0</td>
+      <th>400011</th>
+      <td>Bounty Islands</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>None</td>
+      <td>NaN</td>
     </tr>
     <tr>
-      <th>362400</th>
-      <td>Newfield</td>
-      <td>Newfield</td>
-      <td>2.005521</td>
-      <td>2.005521</td>
-      <td>6.489263e+03</td>
-      <td>MULTIPOLYGON (((1245183.705 4849667.898, 12452...</td>
-      <td>2289.0</td>
+      <th>400012</th>
+      <td>Oceanic Snares Islands</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>None</td>
+      <td>NaN</td>
     </tr>
     <tr>
-      <th>362500</th>
-      <td>Strathern</td>
-      <td>Strathern</td>
-      <td>0.983959</td>
-      <td>0.983959</td>
-      <td>4.203835e+03</td>
-      <td>MULTIPOLYGON (((1243610.148 4848171.365, 12436...</td>
-      <td>1974.0</td>
+      <th>400013</th>
+      <td>Snares Islands</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>None</td>
+      <td>NaN</td>
     </tr>
     <tr>
-      <th>362600</th>
-      <td>Elizabeth Park</td>
-      <td>Elizabeth Park</td>
-      <td>1.030253</td>
-      <td>1.030253</td>
-      <td>5.085466e+03</td>
-      <td>MULTIPOLYGON (((1245413.220 4848647.633, 12456...</td>
-      <td>1887.0</td>
+      <th>400014</th>
+      <td>Oceanic Antipodes Islands</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>None</td>
+      <td>NaN</td>
     </tr>
     <tr>
-      <th>362700</th>
-      <td>Aurora</td>
-      <td>Aurora</td>
-      <td>0.652897</td>
-      <td>0.652897</td>
-      <td>3.653115e+03</td>
-      <td>MULTIPOLYGON (((1244636.902 4848000.202, 12446...</td>
-      <td>1155.0</td>
+      <th>400015</th>
+      <td>Antipodes Islands</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>None</td>
+      <td>NaN</td>
     </tr>
   </tbody>
 </table>
-<p>2255 rows × 7 columns</p>
+<p>2253 rows × 6 columns</p>
 </div>
 </div>
 
@@ -16002,16 +16003,16 @@ Name: Census_Pop, Length: 2090, dtype: int64</pre>
 
 
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>2.0     543
-3.0     520
+<pre>2.0     542
+3.0     521
 4.0     383
-1.0     333
+1.0     332
 5.0     229
 6.0      60
 7.0      17
 8.0       3
-13.0      1
 9.0       1
+13.0      1
 Name: Count_DZ2018, dtype: int64</pre>
 </div>
 
@@ -16062,7 +16063,7 @@ Name: Count_DZ2018, dtype: int64</pre>
 
 </div>
 
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
@@ -16075,6 +16076,32 @@ Name: Count_DZ2018, dtype: int64</pre>
      </div>
 </div>
 </div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
+<pre>/usr/local/lib/python3.8/dist-packages/msgpack/__init__.py:58: FutureWarning: The read_msgpack is deprecated and will be removed in a future version.
+It is recommended to use pyarrow for on-the-wire transmission of pandas objects.
+  return unpackb(data, **kwargs)
+/home/nyou045/git/nodebook/nodebook/pickledict.py:38: FutureWarning: to_msgpack is deprecated and will be removed in a future version.
+It is recommended to use pyarrow for on-the-wire transmission of pandas objects.
+  return msgpack.ExtType(PANDAS_CODE, obj.to_msgpack())
+</pre>
+</div>
+</div>
+
+</div>
+
 </div>
 
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
@@ -16122,11 +16149,10 @@ Name: Count_DZ2018, dtype: int64</pre>
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>SA22020_V1_00_NAME</th>
-      <th>SA22020_V1_00_NAME_ASCII</th>
+      <th>SA22018_V1_NAME</th>
       <th>LAND_AREA_SQ_KM</th>
       <th>AREA_SQ_KM</th>
-      <th>SHAPE_Length</th>
+      <th>Shape_Length</th>
       <th>geometry</th>
       <th>Census_Pop</th>
       <th>Count_DZ2018</th>
@@ -16140,8 +16166,7 @@ Name: Count_DZ2018, dtype: int64</pre>
       <th>Rank_Acces</th>
     </tr>
     <tr>
-      <th>SA22020_V1_00</th>
-      <th></th>
+      <th>SA22018_V1_00</th>
       <th></th>
       <th></th>
       <th></th>
@@ -16161,51 +16186,12 @@ Name: Count_DZ2018, dtype: int64</pre>
   </thead>
   <tbody>
     <tr>
-      <th>100100</th>
-      <td>North Cape</td>
-      <td>North Cape</td>
-      <td>829.081715</td>
-      <td>829.081715</td>
-      <td>4.159623e+05</td>
-      <td>MULTIPOLYGON (((1567022.256 6185741.265, 15670...</td>
-      <td>1134.0</td>
-      <td>1.0</td>
-      <td>5568.000000</td>
-      <td>5657.000000</td>
-      <td>4968.000000</td>
-      <td>3171.000000</td>
-      <td>5446.000000</td>
-      <td>3552.000000</td>
-      <td>6076.000000</td>
-      <td>6142.000000</td>
-    </tr>
-    <tr>
-      <th>100200</th>
-      <td>Rangaunu Harbour</td>
-      <td>Rangaunu Harbour</td>
-      <td>273.936484</td>
-      <td>273.936484</td>
-      <td>1.491554e+05</td>
-      <td>MULTIPOLYGON (((1624517.242 6128488.368, 16245...</td>
-      <td>2889.0</td>
-      <td>4.0</td>
-      <td>5237.006231</td>
-      <td>5811.634476</td>
-      <td>4856.084112</td>
-      <td>3794.280374</td>
-      <td>4288.727934</td>
-      <td>2598.958463</td>
-      <td>5141.264798</td>
-      <td>5622.019730</td>
-    </tr>
-    <tr>
-      <th>100300</th>
-      <td>Inlets Far North District</td>
-      <td>Inlets Far North District</td>
-      <td>0.000000</td>
-      <td>626.101124</td>
-      <td>1.358870e+06</td>
-      <td>MULTIPOLYGON (((1666947.690 6126687.578, 16669...</td>
+      <th>190000</th>
+      <td>Te More</td>
+      <td>47.922581</td>
+      <td>47.922581</td>
+      <td>33420.011116</td>
+      <td>MULTIPOLYGON (((1862216.162 5670176.109, 18622...</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
@@ -16220,11 +16206,10 @@ Name: Count_DZ2018, dtype: int64</pre>
     <tr>
       <th>100400</th>
       <td>Karikari Peninsula</td>
-      <td>Karikari Peninsula</td>
-      <td>174.188105</td>
-      <td>174.188105</td>
-      <td>1.400124e+05</td>
-      <td>MULTIPOLYGON (((1636163.048 6151520.935, 16361...</td>
+      <td>174.180816</td>
+      <td>174.180816</td>
+      <td>140012.346179</td>
+      <td>MULTIPOLYGON (((1636338.253 6150839.030, 16363...</td>
       <td>1647.0</td>
       <td>2.0</td>
       <td>5450.828780</td>
@@ -16239,11 +16224,10 @@ Name: Count_DZ2018, dtype: int64</pre>
     <tr>
       <th>100500</th>
       <td>Tangonge</td>
-      <td>Tangonge</td>
-      <td>177.098445</td>
-      <td>177.098445</td>
-      <td>1.013318e+05</td>
-      <td>MULTIPOLYGON (((1615865.103 6109920.357, 16154...</td>
+      <td>177.204343</td>
+      <td>177.204343</td>
+      <td>101241.085328</td>
+      <td>MULTIPOLYGON (((1622137.152 6120265.782, 16232...</td>
       <td>2040.0</td>
       <td>3.0</td>
       <td>4759.502941</td>
@@ -16254,6 +16238,42 @@ Name: Count_DZ2018, dtype: int64</pre>
       <td>3404.920588</td>
       <td>4798.617647</td>
       <td>5241.555882</td>
+    </tr>
+    <tr>
+      <th>100900</th>
+      <td>Rangitihi</td>
+      <td>84.660427</td>
+      <td>84.660427</td>
+      <td>60678.427036</td>
+      <td>MULTIPOLYGON (((1626461.006 6119158.300, 16264...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>101000</th>
+      <td>Oruru-Parapara</td>
+      <td>103.280728</td>
+      <td>103.280728</td>
+      <td>67331.035524</td>
+      <td>MULTIPOLYGON (((1638658.179 6128997.443, 16386...</td>
+      <td>624.0</td>
+      <td>1.0</td>
+      <td>4740.000000</td>
+      <td>4815.000000</td>
+      <td>4954.000000</td>
+      <td>4360.000000</td>
+      <td>3372.000000</td>
+      <td>821.000000</td>
+      <td>5584.000000</td>
+      <td>5849.000000</td>
     </tr>
     <tr>
       <th>...</th>
@@ -16272,106 +16292,100 @@ Name: Count_DZ2018, dtype: int64</pre>
       <td>...</td>
       <td>...</td>
       <td>...</td>
-      <td>...</td>
     </tr>
     <tr>
-      <th>362300</th>
-      <td>Kennington-Tisbury</td>
-      <td>Kennington-Tisbury</td>
-      <td>36.983390</td>
-      <td>36.983390</td>
-      <td>3.881653e+04</td>
-      <td>MULTIPOLYGON (((1246757.001 4849353.288, 12467...</td>
-      <td>1344.0</td>
-      <td>2.0</td>
-      <td>3229.142857</td>
-      <td>2771.446429</td>
-      <td>2428.000000</td>
-      <td>2465.642857</td>
-      <td>720.178571</td>
-      <td>4331.000000</td>
-      <td>5075.964286</td>
-      <td>4449.821429</td>
+      <th>400011</th>
+      <td>Bounty Islands</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>None</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
     </tr>
     <tr>
-      <th>362400</th>
-      <td>Newfield</td>
-      <td>Newfield</td>
-      <td>2.005521</td>
-      <td>2.005521</td>
-      <td>6.489263e+03</td>
-      <td>MULTIPOLYGON (((1245183.705 4849667.898, 12452...</td>
-      <td>2289.0</td>
-      <td>3.0</td>
-      <td>3788.114024</td>
-      <td>3749.810616</td>
-      <td>3487.013106</td>
-      <td>2915.701180</td>
-      <td>1449.470511</td>
-      <td>4879.606815</td>
-      <td>4008.567497</td>
-      <td>2596.899083</td>
+      <th>400012</th>
+      <td>Oceanic Snares Islands</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>None</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
     </tr>
     <tr>
-      <th>362500</th>
-      <td>Strathern</td>
-      <td>Strathern</td>
-      <td>0.983959</td>
-      <td>0.983959</td>
-      <td>4.203835e+03</td>
-      <td>MULTIPOLYGON (((1243610.148 4848171.365, 12436...</td>
-      <td>1974.0</td>
-      <td>3.0</td>
-      <td>5116.466565</td>
-      <td>5059.588906</td>
-      <td>5046.996960</td>
-      <td>4513.592705</td>
-      <td>3981.092705</td>
-      <td>5029.199088</td>
-      <td>5332.165653</td>
-      <td>1269.080547</td>
+      <th>400013</th>
+      <td>Snares Islands</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>None</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
     </tr>
     <tr>
-      <th>362600</th>
-      <td>Elizabeth Park</td>
-      <td>Elizabeth Park</td>
-      <td>1.030253</td>
-      <td>1.030253</td>
-      <td>5.085466e+03</td>
-      <td>MULTIPOLYGON (((1245413.220 4848647.633, 12456...</td>
-      <td>1887.0</td>
-      <td>3.0</td>
-      <td>5121.521463</td>
-      <td>4573.916534</td>
-      <td>5194.141494</td>
-      <td>3490.200318</td>
-      <td>3400.429253</td>
-      <td>5228.055644</td>
-      <td>5250.516693</td>
-      <td>2909.575517</td>
+      <th>400014</th>
+      <td>Oceanic Antipodes Islands</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>None</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
     </tr>
     <tr>
-      <th>362700</th>
-      <td>Aurora</td>
-      <td>Aurora</td>
-      <td>0.652897</td>
-      <td>0.652897</td>
-      <td>3.653115e+03</td>
-      <td>MULTIPOLYGON (((1244636.902 4848000.202, 12446...</td>
-      <td>1155.0</td>
-      <td>2.0</td>
-      <td>5121.527273</td>
-      <td>5012.927273</td>
-      <td>5290.792208</td>
-      <td>4688.223377</td>
-      <td>4060.638961</td>
-      <td>4296.948052</td>
-      <td>5397.885714</td>
-      <td>2634.020779</td>
+      <th>400015</th>
+      <td>Antipodes Islands</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>None</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
     </tr>
   </tbody>
 </table>
-<p>2255 rows × 16 columns</p>
+<p>2253 rows × 15 columns</p>
 </div>
 </div>
 
@@ -16387,7 +16401,7 @@ Name: Count_DZ2018, dtype: int64</pre>
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">sa2</span><span class="o">.</span><span class="n">to_file</span><span class="p">(</span><span class="s2">&quot;output/SA2_2020_with_weighted_average_IMD18.shp.zip&quot;</span><span class="p">,</span> <span class="n">driver</span><span class="o">=</span><span class="s1">&#39;ESRI Shapefile&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">sa2</span><span class="o">.</span><span class="n">to_file</span><span class="p">(</span><span class="s2">&quot;output/SA2_2018_with_weighted_average_IMD18.shp.zip&quot;</span><span class="p">,</span> <span class="n">driver</span><span class="o">=</span><span class="s1">&#39;ESRI Shapefile&#39;</span><span class="p">)</span>
 </pre></div>
 
      </div>
